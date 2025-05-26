@@ -1,0 +1,36 @@
+.footer {
+  background: #5c5c5c;
+  color: white;
+  padding: 40px 60px;
+  margin-top: auto;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer__nav {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+    }
+  }
+
+  hr {
+    margin: 20px 0;
+    border: 0.5px solid #ccc;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+
+    .footer__socials i {
+      margin-left: 12px;
+      cursor: pointer;
+    }
+  }
+}
