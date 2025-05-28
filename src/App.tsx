@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
 // import components
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 
 // import pages
-import Home from './pages/home/Home'
+import Home from "./pages/home/Home";
 
 // import styles
-import './styles/main.scss'
+import "./styles/main.scss";
 
 function App() {
   return (

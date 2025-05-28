@@ -1,0 +1,77 @@
+// Colors
+$color-white: #ffffff;
+$color-c-gray: #ccc;
+$color-coolgray-20: #dde1e6;
+$color-coolgray-60: #697077;
+$color-coolgray-90: #21272a;
+
+// Logo
+$font-size-lg: 24px;
+$font-size-sm: 12px;
+
+$line-height-tight: 110%; // or 1.1
+$line-height-loose: 140%; // or 1.4
+
+// Font scale Material Design 3
+$font-scales: (
+  display-lg: (
+    size: 57px,
+    line-height: 64px,
+  ),
+  display-md: (
+    size: 45px,
+    line-height: 52px,
+  ),
+  display-sm: (
+    size: 36px,
+    line-height: 44px,
+  ),
+  headline-lg: (
+    size: 32px,
+    line-height: 40px,
+  ),
+  headline-md: (
+    size: 28px,
+    line-height: 36px,
+  ),
+  headline-sm: (
+    size: 24px,
+    line-height: 32px,
+  ),
+  title-lg: (
+    size: 22px,
+    line-height: 28px,
+  ),
+  title-md: (
+    size: 16px,
+    line-height: 24px,
+  ),
+  title-sm: (
+    size: 14px,
+    line-height: 20px,
+  ),
+  body-lg: (
+    size: 16px,
+    line-height: 24px,
+  ),
+  body-md: (
+    size: 14px,
+    line-height: 20px,
+  ),
+  body-sm: (
+    size: 12px,
+    line-height: 16px,
+  ),
+  label-lg: (
+    size: 14px,
+    line-height: 20px,
+  ),
+  label-md: (
+    size: 12px,
+    line-height: 16px,
+  ),
+  label-sm: (
+    size: 11px,
+    line-height: 16px,
+  ),
+);

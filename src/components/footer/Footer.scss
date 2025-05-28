@@ -1,25 +1,28 @@
+@use "../../styles/index" as *;
+
 .footer {
   background: #5c5c5c;
-  color: white;
-  padding: 40px 60px;
+  color: $color-c-gray;
+  padding: 48px 80px;
   margin-top: auto;
 
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
 
-    .footer__nav {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      padding: 0;
-    }
+  nav li text,
+  .nav__logo__icon,
+  .nav__logo__text__up,
+  .nav__logo__text__down,
+  .nav nav ul li text {
+    color: $color-c-gray;
   }
 
   hr {
     margin: 20px 0;
-    border: 0.5px solid #ccc;
+    border: 0.5px solid $color-c-gray;
   }
 
   &__bottom {
@@ -28,9 +31,16 @@
     align-items: center;
     font-size: 14px;
 
-    .footer__socials i {
-      margin-left: 12px;
-      cursor: pointer;
+    .footer__socials {
+      @include flex-row-center;
+      justify-content: center;
+      gap: 12px;
+
+      i {
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+      }
     }
   }
 }

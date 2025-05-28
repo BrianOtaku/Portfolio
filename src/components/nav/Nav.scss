@@ -1,0 +1,60 @@
+@use "../../styles/index" as *;
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    display: flex;
+    gap: 4px;
+
+    &__icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      height: 41px;
+
+      &__up {
+        width: 153px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 110%;
+        color: #697077;
+        margin: -4px 0px;
+      }
+
+      &__down {
+        width: 52px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+        color: #697077;
+      }
+    }
+  }
+
+  nav ul {
+    display: flex;
+    gap: 16px;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text {
+        padding: 0px 12px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #21272a;
+      }
+    }
+  }
+}
