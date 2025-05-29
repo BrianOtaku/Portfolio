@@ -2,6 +2,10 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareFull } from "@fortawesome/free-regular-svg-icons";
 import "./Nav.scss";
+import {
+  faFacebookSquare,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Nav = () => {
   return (
@@ -17,18 +21,19 @@ const Nav = () => {
       </div>
       <nav>
         <ul>
-          <li>
-            <text>Eleven</text>
-          </li>
-          <li>
-            <text>Twelve</text>
-          </li>
-          <li>
-            <text>Thirteen</text>
-          </li>
-          <li>
-            <text>Fourteen</text>
-          </li>
+          <li>Home</li>
+          <li>Projects</li>
+          <li>About</li>
+          <li>Contacts</li>
+        </ul>
+        <div className="line"></div>
+        <ul>
+          <span>
+            <FontAwesomeIcon icon={faFacebookSquare} className="icon" />
+          </span>
+          <span>
+            <FontAwesomeIcon icon={faInstagram} className="icon" />
+          </span>
         </ul>
       </nav>
     </div>

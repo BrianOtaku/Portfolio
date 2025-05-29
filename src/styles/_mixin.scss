@@ -3,3 +3,10 @@
   flex-direction: row;
   align-items: center;
 }
+
+@mixin flex-row-center-sbw {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

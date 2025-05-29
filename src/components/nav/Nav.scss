@@ -40,21 +40,34 @@
     }
   }
 
-  nav ul {
-    display: flex;
+  nav {
+    @include flex-row-center;
     gap: 16px;
 
-    li {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    ul {
+      @include flex-row-center;
+      gap: 16px;
 
-      text {
+      li {
         padding: 0px 12px;
+
+        // text
         font-weight: 500;
         font-size: 16px;
         color: #21272a;
       }
+
+      span {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .line {
+      width: 35px;
+      height: 0px;
+      border: 1px solid #21272a;
+      transform: rotate(90deg);
     }
   }
 }
