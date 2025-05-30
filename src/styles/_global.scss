@@ -1,5 +1,10 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
+  // font-family: "Roboto", sans-serif;
+  color: #f9f7f9;
+  background: #1f1f1f;
+
+  overflow-x: hidden;
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -36,6 +41,7 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 /* 7. Inherit fonts for form controls */
@@ -43,6 +49,7 @@ input,
 button,
 textarea,
 select {
+  all: unset;
   font: inherit;
 }
 

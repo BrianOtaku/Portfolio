@@ -1,46 +1,25 @@
 @use "../../styles/index" as *;
 
 .footer {
-  background: #5c5c5c;
-  color: $color-c-gray;
-  padding: 48px 64px;
-  margin-top: auto;
+  @include flex-center-sbw;
 
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 
-  nav li text,
-  .nav__logo__icon,
-  .nav__logo__text__up,
-  .nav__logo__text__down,
-  .nav nav ul li text {
-    color: $color-c-gray;
-  }
+  padding: 8px 64px;
+  margin-top: 0px;
+  font-size: 14px;
 
-  hr {
-    margin: 20px 0;
-    border: 0.5px solid $color-c-gray;
-  }
+  .footer__socials {
+    @include flex-center;
+    justify-content: center;
+    gap: 12px;
 
-  &__bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-
-    .footer__socials {
-      @include flex-row-center;
-      justify-content: center;
-      gap: 12px;
-
-      i {
-        width: 15px;
-        height: 15px;
-        cursor: pointer;
-      }
+    i {
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
     }
   }
 }

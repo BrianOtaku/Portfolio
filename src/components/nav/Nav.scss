@@ -1,9 +1,8 @@
 @use "../../styles/index" as *;
 
 .nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex-center-sbw;
+  height: 6vh;
 
   &__logo {
     display: flex;
@@ -22,30 +21,26 @@
       height: 41px;
 
       &__up {
-        width: 153px;
         font-weight: 700;
         font-size: 24px;
         line-height: 110%;
-        color: #697077;
         margin: -4px 0px;
       }
 
       &__down {
-        width: 52px;
         font-weight: 400;
         font-size: 12px;
         line-height: 140%;
-        color: #697077;
       }
     }
   }
 
   nav {
-    @include flex-row-center;
+    @include flex-center;
     gap: 16px;
 
     ul {
-      @include flex-row-center;
+      @include flex-center;
       gap: 16px;
 
       li {
@@ -54,7 +49,6 @@
         // text
         font-weight: 500;
         font-size: 16px;
-        color: #21272a;
       }
 
       span {
@@ -66,7 +60,7 @@
     .line {
       width: 35px;
       height: 0px;
-      border: 1px solid #21272a;
+      border: 1px solid #f9f7f9;
       transform: rotate(90deg);
     }
   }

@@ -1,4 +1,74 @@
-.layout {
-  min-height: 100vh;
-  padding: 0px 64px;
+@use "../../styles/index" as *;
+
+.home {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  &__text {
+    @include flex-al-flex-start;
+    flex-direction: column;
+
+    padding: 10px;
+    gap: 32px;
+
+    position: absolute;
+    width: 510px;
+    left: 83px;
+    top: 170px;
+
+    &__up {
+      font-weight: 700;
+      font-size: map-get(map-get($typography, headline-md), size);
+      line-height: map-get(map-get($typography, headline-md), line-height);
+    }
+
+    &__mid {
+      font-weight: 700;
+      font-size: map-get(map-get($typography, display-lg), size);
+      line-height: map-get(map-get($typography, display-lg), line-height);
+    }
+
+    &__down {
+      font-weight: 400;
+      font-size: map-get(map-get($typography, body-lg), size);
+      line-height: map-get(map-get($typography, body-lg), line-height);
+
+      color: rgba(248, 247, 249, 0.5);
+    }
+  }
+
+  &__button {
+    padding: 14px 28px;
+
+    border: 2px solid #f8f7f9;
+    border-radius: 16px;
+
+    font-weight: 700;
+    font-size: map-get(map-get($typography, label-lg), size);
+    line-height: map-get(map-get($typography, label-lg), line-height);
+  }
+
+  picture {
+    z-index: -5;
+    position: relative;
+    top: -12vh;
+
+    img {
+      position: absolute;
+      left: 600px;
+    }
+  }
+
+  circle {
+    z-index: -10;
+
+    position: absolute;
+    width: 1000px;
+    height: 100vh;
+    left: 650px;
+    top: 0px;
+    background: rgba(248, 247, 249, 0.1);
+    filter: blur(128px);
+  }
 }

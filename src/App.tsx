@@ -2,7 +2,6 @@ import React from "react";
 
 // import components
 import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
 
 // import pages
 import Home from "./pages/home/Home";
@@ -15,7 +14,6 @@ function App() {
     <>
       <Header />
       <Home />
-      <Footer />
     </>
   );
 }
